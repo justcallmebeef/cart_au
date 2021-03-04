@@ -32,5 +32,5 @@ https://cartau.herokuapp.com/
 
 ### Future Implementation Goals
 
-Add TypeScript
-Add Redux Toolkit or Recoil for data persistance and management
+- Add TypeScript
+- Add Redux Toolkit or Recoil for data persistance and management
