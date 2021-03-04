@@ -6,7 +6,7 @@ A simple shopping cart application
 
 Run the API locally:
 
-- In your terminal, git clone git@github.com:justcallmebeef/cartBE.git
+- In your terminal, git clone [git@github.com:justcallmebeef/cartBE.git](git@github.com:justcallmebeef/cartBE.git)
 - npm install
 - node index.js
 - Open [http://localhost:3002](http://localhost:3002) to view it in the browser.
