@@ -4,16 +4,6 @@ A simple shopping cart application
 
 ## Installation
 
-Run the API locally:
-
-- In your terminal, git clone [git@github.com:justcallmebeef/cartBE.git](git@github.com:justcallmebeef/cartBE.git)
-- npm install
-- node index.js
-- Open [http://localhost:3002](http://localhost:3002) to view it in the browser.
-- This code can be found here: [https://github.com/justcallmebeef/cartBE](https://github.com/justcallmebeef/cartBE)
-
-Once the API is running:
-
 - Clone this repo
 - npm install
 - npm start
@@ -27,8 +17,9 @@ JavaScript, React, Bootstrap, Nodejs, and Express
 
 ## API Reference
 
-UNDER CONSTRUCTION
-https://cartau.herokuapp.com/
+[https://cartau.herokuapp.com/](https://cartau.herokuapp.com/)
+
+- This code can be found here: [https://github.com/justcallmebeef/cartBE](https://github.com/justcallmebeef/cartBE)
 
 ### Future Implementation Goals
 
