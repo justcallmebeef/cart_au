@@ -10,6 +10,7 @@ Run the API locally:
 - npm install
 - node index.js
 - Open [http://localhost:3002](http://localhost:3002) to view it in the browser.
+- This code can be found here: [https://github.com/justcallmebeef/cartBE](https://github.com/justcallmebeef/cartBE)
 
 Once the API is running:
 
