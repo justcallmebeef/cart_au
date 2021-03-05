@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 const itemsAPI = `http://localhost:3002/`;
 
-export default function Item() {
+export default function Item({ cartList, setCart }) {
   const [items, setItems] = useState();
 
   useEffect(() => {
@@ -21,7 +21,22 @@ export default function Item() {
               <Card.Body>
                 <Card.Title>{item.item}</Card.Title>
                 <Card.Text>${item.price}</Card.Text>
-                <Button variant="primary">Add to Cart</Button>
+                <Button
+                  variant="primary"
+                  id={item.id}
+                  onClick={() =>
+                    setCart((cartList) => [
+                      ...cartList,
+                      {
+                        item: item.item,
+                        price: item.price,
+                        quantity: 1,
+                      },
+                    ])
+                  }
+                >
+                  Add to Cart
+                </Button>
               </Card.Body>
             </Card>
           </div>

@@ -1,22 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Table from "react-bootstrap/Table";
 
-let cartItemsList = [];
+export default function Cart(cartList) {
+  const [quantity, setQuantity] = useState(1);
 
-export default function Cart() {
-  let items = cartItemsList.map((item) => {
-    return (
-      <tbody>
-        <tr>
-          <th>{item}</th>
-          <th>{item.price}</th>
-          <th>{item.quantity}</th>
-          <th>{item.price * item.quantity}</th>
-        </tr>
-      </tbody>
-    );
-  });
-  return cartItemsList.length !== 0 ? (
+  return cartList.cartList.length !== 0 ? (
     <Table bordered>
       <thead>
         <tr>
@@ -26,7 +14,23 @@ export default function Cart() {
           <th>Total</th>
         </tr>
       </thead>
-      {items}
+      <tbody>
+        {cartList.cartList?.map((item) => (
+          <tr>
+            <td>{item.item}</td>
+            <td>{item.price}</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                onChange={(event) => setQuantity(event.target.value)}
+                value={quantity}
+              />
+            </td>
+            <td>{item.price * item.quantity}</td>
+          </tr>
+        ))}
+      </tbody>
     </Table>
   ) : (
     <h3>Your cart is empty.</h3>
