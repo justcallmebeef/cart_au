@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Card, Button } from "react-bootstrap";
 
-const itemsAPI = `http://localhost:3002/`;
+const itemsAPI = `https://cartau.herokuapp.com/`;
 
-export default function Item({ cartList, setCart }) {
+export default function Item({ setCart }) {
   const [items, setItems] = useState();
 
   useEffect(() => {
