@@ -28,6 +28,7 @@ export default function Item({ setCart }) {
                     setCart((cartList) => [
                       ...cartList,
                       {
+                        id: item.id,
                         item: item.item,
                         price: item.price,
                         quantity: 1,
